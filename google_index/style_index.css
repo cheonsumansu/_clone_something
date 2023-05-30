@@ -1,0 +1,209 @@
+/*
+dbd8e3 - 헤더
+5c5470 - 검색창테두리, 푸터아래
+352f44 - 메뉴클릭원
+2a2438 - 배경
+9c9aa4 - 헤더왼쪽, 인풋아이콘, 대한민국
+927fbf - 로그인버튼
+c4bbf0 - 구글 첫글자
+403a4e - 메인버튼
+e2e2e2 - 메인버튼글씨
+1a1722 - 푸터
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #2a2438;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1em 2em;
+}
+#header-left {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1em;
+    align-items: center;
+    color: #9c9aa4;
+    font-size: 0.9em;
+}
+#header-left a {
+    text-decoration: none;
+    color: inherit;
+}
+#header-left a:hover {
+    text-decoration: underline;
+}
+#header-right {
+    font-size: 0.9em;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1em;
+    align-items: center;
+    color: #ffffff;
+}
+#header-right a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 0.9em;
+}
+#header-right a:hover {
+    text-decoration: underline;
+}
+#header-icon {
+    position: absolute;
+    top: 5%;
+    left: 80%;
+    transform: translate(-30%, -60%);
+    color: #ffffff;
+}
+.circle-space {
+    width: 2.5em;
+    height: 2.5em;
+    margin: 0 0.6em;
+}
+.circle-click {
+    background-color: #352f44;
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    justify-content: center;
+    margin: 0 -0.5em;
+}
+#button-login {
+    width: 6em;
+    height: 2.7em;
+    background-color: #927fbf;
+    border: none;
+    border-radius: 0.4em;
+    cursor: pointer;
+}
+#button-login:hover {
+    background-color: #ae97e3;
+}
+main {
+    text-align: center;
+    justify-content: center;
+    height: auto;
+    min-height: 100%;
+}
+#div-title {
+    margin-top: 1em;
+    font-size: 6em;
+    font-weight: 600;
+}
+#div-title span {
+    margin: 0 -0.2em;
+    color: #ffffff;
+}
+#div-title span:first-child {
+    color: #c4bbf0;
+}
+#div-search {
+    border: 0.1em solid #5c5470;
+    border-radius: 2em;
+    width: 36em;
+    height: 3em;
+    margin: 2em auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5em;
+}
+#div-search:hover {
+    background-color: #5c5470;
+    border-radius: 2em;
+}
+#div-search i {
+    color: #9c9aa4;
+}
+#input-search {
+    width: 80%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.1em;
+    color: #ffffff;
+}
+#div-button {
+    align-items: center;
+    margin: auto;
+}
+#div-button button {
+    text-align: center;
+    margin: auto 0.5em;
+    padding: 0 1.5em;
+    height: 2.8em;
+    background-color: #403a4e;
+    border: none;
+    color: #e2e2e2;
+    border-radius: 0.4em;
+    cursor: pointer;
+}
+#div-button button:hover {
+    outline: 0.1em solid #5c5470;
+}
+footer {
+    height: 6em;
+    position: absolute;
+    bottom: 0;
+    background-color: #1a1722;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+#footer-location {
+    height: 100%;
+    border-bottom: solid 0.1px #352f44;
+}
+#footer-location span {
+    position: absolute;
+    top: 25%;
+    transform: translateY(-50%);
+    margin-left: 2em;
+    color: #9c9aa4;
+}
+#footer-menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 6em;
+}
+#footer-left {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2em;
+    align-items: center;
+    color: #5c5470;
+}
+#footer-left a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 0.9em;
+}
+#footer-left a:hover {
+    text-decoration: underline;
+}
+#footer-right {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2em;
+    align-items: center;
+    color: #5c5470;
+}
+#footer-right a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 0.9em;
+}
+#footer-right a:hover {
+    text-decoration: underline;
+}
